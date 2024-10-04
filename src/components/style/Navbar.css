@@ -1,0 +1,96 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #1e183d;
+    border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(113, 97, 184, 0.5);
+}
+#logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#Navbar li a{
+    font-size: c;
+    text-decoration: none;
+    font-weight: 300px;
+    color: rgb(255, 255, 255);
+}
+
+#Navbar li a:hover,
+#Navbar li a.active{
+    color :#a16900;
+    width: 30%;
+    height: 2px;
+    transition-duration: .5s;
+}
+
+#Navbar li a:hover::after,
+#Navbar li a.active::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: rgb(188, 95, 3);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition-duration: 1s;
+}
+
+#mobile{
+    color: aliceblue;
+}
+
+#mobile{
+    display: none;
+}
+
+@media screen and (max-width:769px) {
+
+    #Navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;/*for sepration*/
+        top: 60px;
+        right: -400px;
+        width: 300px;
+        height: 400px;
+        background-color: #1e183d;
+        padding: 40px 0 0 20px;
+        border-radius: 20px;
+        transition-duration: .5s;
+
+    }
+    #Navbar.active{
+        right:0px;
+        transition-duration: .5s ease-in-out;
+    }
+    #Navbar li{
+        margin-bottom: 20px;
+
+    }
+    #mobile{
+        display: block;
+    }
+    #mobile i{
+        font-size: 20px;
+        cursor: pointer;
+        color: #a16900;
+    }
+}

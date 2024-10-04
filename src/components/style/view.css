@@ -1,0 +1,43 @@
+.view-main{
+    background-color: #1e183d;
+}
+.rooms{
+    color: #a16900;
+    height:100%;
+    width: 100%;
+}
+
+.rooms h1{
+    margin-left: 40%;
+    font-size: 40px;
+    font-family: "Kalam", cursive;
+}
+
+.rooms img{
+    height: 50%;
+    width: 50%;
+    border-radius: 20%; 
+    clip-path: inset(10px 20px 30px 40px);
+   
+}
+
+
+.outdoor{
+    color: #a16900;
+    height: 100%;
+    width: 100%;
+}
+.outdoor img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 20%; 
+    clip-path: inset(10px 20px 30px 40px);
+   
+}
+
+.outdoor h1{
+    margin-left: 40%;
+    font-size: 40px;
+    font-family: "Kalam", cursive;
+}

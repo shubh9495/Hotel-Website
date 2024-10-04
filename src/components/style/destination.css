@@ -1,0 +1,79 @@
+.destinationHeading{
+    margin: 0;
+    padding: 20px;
+    font-family: "Kalam", cursive;
+    background-color: #1e183d;
+}
+.destinationHeading h1{
+    font-size: 40px;
+    margin-left: 35%;
+    width: auto;
+    font-family: "Kalam", cursive;
+    color: aliceblue;
+}
+.destinationHeading p{
+    color: aliceblue;
+}
+
+.des-image img{
+    height: 190px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform .3s ease-in-out;
+    box-shadow: -1px 1px 6.2px -10px rgba(0, 0, 0, 0.19);
+}
+.des-image img:hover{
+    transform: scale(1.1);
+}
+
+/* .des-image img:nth-child(2){
+    position: absolute;
+    top: -8%;
+    right: -120%;
+} */
+.des-image{
+    position: relative;
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+.destination-box{
+    padding: 0;
+    margin-left: 15px;
+    /* display: flex; */
+    gap: 4rem;
+}
+.reverse{
+    flex-direction: row-reverse;
+    margin-right: 19px;
+
+}
+.des-image-rev{
+    position: relative;
+    display: flex;
+    margin-right: 18rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+
+.des-places{
+    height: 30%;
+    width: auto;
+}
+@media (max-width: 1040px) {
+    .destination-box{
+        flex-direction: column;    
+    }
+    .destinationHeading{
+        margin: auto;
+        overflow-x: hidden;
+    }
+    .des-image img:nth-child(2){
+        position: absolute;
+        top: -8%;
+        right: -120%;
+    }
+        
+}
